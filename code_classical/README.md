@@ -15,7 +15,7 @@
    git clone --recursive https://github.com/danruod/IEDL.git
    conda env create -f environment.yml
    conda activate IEDL
-   cd IEDL-main/code_classical
+   cd IEDL/code_classical
    python main.py --configid "1_mnist/mnist-iedl" --suffix test
    ```
    * run the configuration specifed at [`./configs/1_mnist/mnist-iedl.json`](./configs/1_mnist/mnist-iedl.json), and
@@ -29,14 +29,14 @@
     
       ```
       git clone --recursive https://github.com/danruod/IEDL.git
-      cd IEDL-main/code_classical
+      cd IEDL/code_classical
       ```
    </details>
 
 +  <details open>
    <summary><strong>Step 2: Create a Environment</strong></summary>
    
-   > All two folders [`IEDL-main/code_classical`](./) and [`IEDL-main/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
+   > All two folders [`IEDL/code_classical`](./) and [`IEDL/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
    1. Create a Conda environment for the code:
       ```
       conda env create -f environment.yml

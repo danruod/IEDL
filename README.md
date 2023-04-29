@@ -10,9 +10,35 @@ Uncertainty estimation is a key factor that makes deep learning reliable in prac
 
 <img src="iedl.jpg" alt="drawing" width="100%"/>
 
-
 # 🔥 Updates
+- 2023.04: The source code is now available!
 - 2023.04: We are delight to announce that this paper is accepted by ICML 2023!
+
+
+# 🛠️ Requirement
+
+  ```
+  git clone --recursive https://github.com/danruod/IEDL.git
+  conda env create -f environment.yml
+  conda activate IEDL
+  ```
+
+
+# 🚀 File Structure & Quick-starter code
+
+  This repository mainly contains two folders:
+  * [`code_classical`](./code_classical) directory contains the experimnets on MNIST and CIFAR10.
+    ```
+    cd IEDL-main/code_classical
+    python main.py --configid "1_mnist/mnist-iedl" --suffix test
+    ```
+    * run the configuration specifed at [`./code_classical/configs/1_mnist/mnist-iedl.json`](./code_classical/configs/1_mnist/mnist-iedl.json), and
+    * store the generated outputs periodically at `./code_classical/results/1_mnist_test/mnist-iedl.csv`.
+
+  * [`code_fsl`](./code_fsl) directory contains the experimnets on few-shot settings using the WideResNet28 feature stack trained by the S2M2R method. It will be uploaded soon.
+
+# 🤝 Acknowledgement
+  * [`code_classical`](./code_classical) is built upon the repository of [Posterior Network](https://github.com/sharpenb/Posterior-Network). We would like to thank its authors for their excellent work. If you want to use and redistribe our code, please follow [this license](https://github.com/Correr-Zhou/RepMode/blob/LICENSE) as well.
 
 
 # 📑 Citation
@@ -28,4 +54,5 @@ If you find that our work is helpful in your research, please consider citing ou
 
 # ✉️ Contact
 Feel free to contact me (Danruo DENG: [drdeng@link.cuhk.edu.hk](mailto:drdeng@link.cuhk.edu.hk)) if anything is unclear or you are interested in potential collaboration.
+
 
