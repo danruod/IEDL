@@ -13,7 +13,7 @@
 
 # Quick Q&A Rounds
 
-1. **Question**: Give me a quick-starter code to start reproducing the paper trainings on a GPU?
+1. **Question**: Give me a quick-starter code to start trainings?
     ```
     git clone --recursive https://github.com/danruod/IEDL.git
     conda env create -f environment.yml
