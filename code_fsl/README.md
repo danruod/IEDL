@@ -39,7 +39,7 @@
  
       ```
       git clone --recursive https://github.com/danruod/IEDL.git
-      cd IEDL-main/code_fsl
+      cd IEDL/code_fsl
       ```
 
    </details>
