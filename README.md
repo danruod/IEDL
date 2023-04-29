@@ -29,16 +29,23 @@ Uncertainty estimation is a key factor that makes deep learning reliable in prac
   This repository mainly contains two folders:
   * [`code_classical`](./code_classical) directory contains the experimnets on MNIST and CIFAR10.
     ```
-    cd IEDL-main/code_classical
+    cd IEDL/code_classical
     python main.py --configid "1_mnist/mnist-iedl" --suffix test
     ```
     * run the configuration specifed at [`./code_classical/configs/1_mnist/mnist-iedl.json`](./code_classical/configs/1_mnist/mnist-iedl.json), and
     * store the generated outputs periodically at `./code_classical/results/1_mnist_test/mnist-iedl.csv`.
 
-  * [`code_fsl`](./code_fsl) directory contains the experimnets on few-shot settings using the WideResNet28 feature stack trained by the S2M2R method. It will be uploaded soon.
+  * [`code_fsl`](./code_fsl) directory contains the experimnets on few-shot settings using the WideResNet28 feature stack trained by the S2M2R method.
+    ```
+    cd IEDL/code_fsl
+    bash ./features/download.sh
+    python main.py --configid "1_mini/5w-iedl" --suffix test
+    ```
+    * run the configuration specifed at [`./code_fsl/configs/1_mini/5w-iedl.json`](./code_fsl/configs/1_mini/5w-iedl.json), and
+    * store the generated outputs periodically at `./code_fsl/results/1_mini_test/5w-iedl.csv`.
 
 # 🤝 Acknowledgement
-  * [`code_classical`](./code_classical) is built upon the repository of [Posterior Network](https://github.com/sharpenb/Posterior-Network). We would like to thank its authors for their excellent work. If you want to use and redistribe our code, please follow [this license](https://github.com/Correr-Zhou/RepMode/blob/LICENSE) as well.
+  * [`code_classical`](./code_classical) is built upon the repository of [Posterior Network](https://github.com/sharpenb/Posterior-Network), and [`code_fsl`](./code_fsl) is built upon the repository of [Firth Bias Reduction in Few-shot Distribution Calibration](https://github.com/ehsansaleh/code_dcf). We would like to thank its authors for their excellent work. If you want to use and redistribe our code, please follow [this license](./LICENSE) as well.
 
 
 # 📑 Citation
