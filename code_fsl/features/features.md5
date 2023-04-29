@@ -1,0 +1,15 @@
+65b6dc696d9bd78ba738794e10a169d8  ./WideResNet28_10_S2M2_R/mini2mini_val.pkl
+ba9cadb7e03f7e5bf59f5cb91343fd97  ./WideResNet28_10_S2M2_R/mini2mini_novel.pkl
+5ea3d1db538a028b2ca2183bcecea495  ./WideResNet28_10_S2M2_R/mini2mini_base.pkl
+aefd9171289c52f7c27b71d580e969c2  ./WideResNet28_10_S2M2_R/CUB2CUB_val.pkl
+2d5f83ffb5bc4cd65373e33fb87b457a  ./WideResNet28_10_S2M2_R/mini2CUB_val.pkl
+e072aec12fda0460d26463277810b67e  ./WideResNet28_10_S2M2_R/mini2CUB_base.pkl
+3877db7ddbf3e240521ca3de8e6f282f  ./WideResNet28_10_S2M2_R/tiered2tiered_base.pkl
+7054779fe45a554afcba68887495c973  ./WideResNet28_10_S2M2_R/CUB2CUB_novel.pkl
+a0263b74a1892789f0a8a45e44a5371a  ./WideResNet28_10_S2M2_R/tiered2CUB_novel.pkl
+5d8709c24da572660a5da66f5b199c83  ./WideResNet28_10_S2M2_R/mini2CUB_novel.pkl
+fcb95162cb2810ec637341ec1705e187  ./WideResNet28_10_S2M2_R/tiered2CUB_val.pkl
+aeb1083b6e5ce02f89874c094045685b  ./WideResNet28_10_S2M2_R/tiered2tiered_novel.pkl
+8bafcdaa6e8ff3f326ad0c6e0be8cd38  ./WideResNet28_10_S2M2_R/CUB2CUB_base.pkl
+29083303905e2e28eaa714938542b5d3  ./WideResNet28_10_S2M2_R/tiered2CUB_base.pkl
+fc344a8204075b7c9028df0186c64a5e  ./WideResNet28_10_S2M2_R/tiered2tiered_val.pkl
