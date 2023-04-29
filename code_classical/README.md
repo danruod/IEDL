@@ -36,7 +36,7 @@
 +  <details open>
    <summary><strong>Step 2: Create a Environment</strong></summary>
    
-   > All two folders [`IEDL/code_classical`](./) and [`IEDL/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
+   > All two folders [`IEDL/code_classical`](../code_classical) and [`IEDL/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
    1. Create a Conda environment for the code:
       ```
       conda env create -f environment.yml
