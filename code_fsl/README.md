@@ -1,6 +1,5 @@
 # Fisher Information-based Evidential Deep Learning ($\mathcal{I}$-EDL) with FSL
 
-<!-- [![Project](https://img.shields.io/badge/Project-Website-blue?style=flat-square)](https://correr-zhou.github.io/RepMode/) -->
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?style=flat-square)](https://arxiv.org/pdf/2303.02045.pdf)
 [![Project](https://img.shields.io/badge/Code-Github-purple?style=flat-square)](https://github.com/danruod/IEDL)
 
@@ -18,14 +17,14 @@
     git clone --recursive https://github.com/danruod/IEDL.git
     conda env create -f environment.yml
     conda activate IEDL
-    cd IEDL-main/code_fsl
+    cd IEDL/code_fsl
     bash ./features/download.sh
     bash ./main.sh
     ```
 ---------
 2. **Question**: Give me a simple python command to run?
    ```
-   python main.py --configid "1_mini/5w-iedl" --suffix 'test'
+   python main.py --configid "1_mini/5w-iedl" --suffix test
    ```
     
     * run the configuration specifed at [`./configs/1_mini/5w-iedl.json`](./configs/1_mini/5w-iedl.json), and
@@ -47,7 +46,7 @@
 +  <details open>
    <summary><strong>Step 2: Create a Environment</strong></summary>
    
-   > All two folders [`IEDL-main/code_classical`](../code_classical) and [`IEDL-main/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
+   > All two folders [`IEDL/code_classical`](../code_classical) and [`IEDL/code_fsl`](../code_fsl) use the same environment and you only need to install it once. 
    1. Create a Conda environment for the code:
       ```
       conda env create -f environment.yml
@@ -73,9 +72,9 @@
    
       * To fire up some training yourself, run
         ```
-        python main.py --configid "1_mini/5w-iedl" --suffix 'test'
+        python main.py --configid "1_mini/5w-iedl" --suffix test
         ```
-      * This command will read the `./configs/1_mini/5w-iedl.json` config as input.
+      * This command will read the [`./configs/1_mini/5w-iedl.json`](./configs/1_mini/5w-iedl.json) config as input.
       * if you set `store_results = True`, the computed statistics (including accuracy, uncertainty related metrics) will be saved at  `./results/1_mini_test/5w-iedl.csv`.
       * To run multiple trainings, run [`./main.sh`](./main.sh).
    
@@ -84,7 +83,7 @@
 +  <details open>
    <summary><strong>Step 5: Summarizing the Results</strong></summary>
 
-      * Set the `csvdir_expname` of `./utils/cfg.py` to specify which folders under `./results` to summarize.
+      * Set the `csvdir_expname` of [`./utils/cfg.py`](./utils/cfg.py) to specify which folders under `./results` to summarize.
       * To summerize the files under these folders, run 
         ```
         python utils/csv2summ.py
@@ -126,8 +125,8 @@
   ```
   
   * Note that our code runs the cartesian product of all arguments ending with `_list`. 
-    * For instance, there is `2=1*1*1*1*2` different settings to try in the above config file.
-    * Each of these settings runs 10,000 tasks, creating a total of 20,000 tasks to perform for this file.
+    * For instance, there is `3=3*1*1*1` different settings to try in the above config file.
+    * Each of these settings runs 10,000 tasks, creating a total of 30,000 tasks to perform for this file.
   </details>
   
 + <details>
